@@ -27,7 +27,6 @@ function HeroSection() {
     controls={false}    // Disable carousel controls
     indicators={false}  // Disable indicators (dots)
     interval={null}     // Disable automatic sliding
-                 // Optional: Adds a fade effect between slides
     >
 
       <Carousel.Item>
@@ -62,7 +61,7 @@ function HeroSection() {
     </Carousel>
     </div>
     <div className="btn-div">
-   <Link to ='/SignUp'> <button  className="btn  fw-bold btn-start px-3 px-md-4 "> Start Now</button> </Link>   </div>
+   <Link to ='/Login'> <button  className="btn  fw-bold btn-start px-3 px-md-4 "> Start Now</button> </Link>   </div>
     </>
   );
 }
