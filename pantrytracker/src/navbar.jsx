@@ -25,7 +25,7 @@ const NavbarComp = () => {
 <>
 <Navbar collapseOnSelect expand="lg" className="bg-body-transparent "  >
         <Container fluid className="d-flex justify-content-start gap-3">
-            <Navbar.Brand href="#home" style={{color:'red'}} className="fw-bold text-dark fs-3  ms-1" >Pantry Tracker</Navbar.Brand>
+            <Navbar.Brand href="#home" style={{color:'rgb(255, 124, 16)'}} className="fw-bold  fs-3  ms-1"  >Pantry Tracker</Navbar.Brand>
             {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto px-md-2 px-3 gap-3">

@@ -9,7 +9,8 @@ import { useNavigate } from 'react-router-dom';
 import './Sidebar.css'; // We'll create this CSS file
 
 const Sidebar = ({ onNavItemClick, isOpen, toggleSidebar }) => {
-  const { logOut } = useUserAuth();
+  const {user, logOut } = useUserAuth();
+  const username = user.email.split('@')[0];
   const navigate = useNavigate();
   
   const handleLogout = async () => {
@@ -27,6 +28,7 @@ const Sidebar = ({ onNavItemClick, isOpen, toggleSidebar }) => {
         <button className="btn btn-link d-md-none ml-auto" onClick={toggleSidebar}>
           <span>&times;</span>
         </button>
+        {username}
       </CSidebarHeader>
       <CSidebarNav className='d-flex flex-column gap-3'>
         <CNavTitle className='nav-title'>Menu</CNavTitle>
