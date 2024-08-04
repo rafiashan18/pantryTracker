@@ -1,0 +1,105 @@
+.wave-container {
+    position: absolute;
+    top: 0;
+   
+  }
+  .nav{z-index: 9;}
+
+  .btn-div {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+  }
+  .btn-start{
+    /* padding: 10px; */
+    background-color: #fff;
+    border: 2px solid rgb(255, 124, 16);
+    color:  rgb(255, 124, 16);
+    font-weight: 700;
+    border-radius: 30px;
+  }
+  .btn-start:hover{
+    background-color: rgb(255, 124, 16);
+ 
+    color:  #fff;
+  }
+  .wave-container::before {
+    content: "";
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 20vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23ffffff'/></svg>");    z-index: 1;
+  }
+
+
+  .orange-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(207, 93, 0);
+    opacity: 0.7;
+  }
+
+  .custom-caption {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 40%;
+  }
+  
+  .custom-caption h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-caption p {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-caption {
+      left: 5%;
+      max-width: 80%;
+    }
+    
+    .custom-caption h3 {
+      font-size: 1.8rem;
+    }
+    
+    .custom-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media(max-width:850px) {
+    .wave-container::before {
+      height: 65px;
+    }
+  }
+  @media (max-width: 992px) {
+    .nav {
+      background-color: transparent; /* change the background color to white */
+    }
+    .nav .navbar-toggler {
+      border-color: #ffffff; /* change the border color to white */
+    }
+    .nav .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* change the icon color to white */
+    }
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+      }
+  }

@@ -1,0 +1,27 @@
+.nav-item:hover {
+    background-color: #000 !important;
+    color: rgb(255, 124, 16) !important; /* optional: change text color to white for better contrast */
+    font-weight: 700;
+  }
+
+
+
+  .nav-item:hover .nav-icon ,.nav-title {
+    color: rgb(255, 124, 16) !important; /* change icon color to orange on hover */
+  }
+
+@media (max-width: 767px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      height: 100vh;
+      width: 250px;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+  
+    .sidebar.show {
+      left: 0;
+    }
+  }
