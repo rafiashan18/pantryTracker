@@ -39,7 +39,7 @@ function ItemCards({ items, onDeleteItem, onUpdateItem }) {
               Expiry Date: {formatDate(item.expiryDate)}
             </Card.Text>
             <button onClick={() => handleUpdate(item)} className='mx-2 rounded-2 '  style={{backgroundColor:' transparent', border:'2px solid rgb(255, 124, 16)' ,color:'rgb(255, 124, 16)'}} >Update</button>
-            <button onClick={() => handleDelete(item.id)} className='mx-2 rounded-2 '  style={{backgroundColor:' #000', border:'none' }} >Delete</button>
+            <button onClick={() => handleDelete(item.id)} className='mx-2 rounded-2 '  style={{backgroundColor:' #000', border:'none' , color:"#fff"}} >Delete</button>
           </Card.Body>
         </Card>
       ))}
